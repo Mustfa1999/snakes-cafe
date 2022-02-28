@@ -1,11 +1,12 @@
 greetings = """
 $ python snakes_cafe.py
-**************************************
-**    Welcome to the Snakes Cafe!   **
-**    Please see our menu below.    **
+****************************************
+**    Welcome to the Snakes Cafe!     **
+**    Please see our menu below.      **
 **
-** To quit at any time, type "quit" **
-**************************************
+** To quit at any time, type "quit"   **
+** To display your order, type "meal" **
+****************************************
 
 Appetizers
 ----------
@@ -36,15 +37,12 @@ Unicorn Tears
 ** What would you like to order? **
 ***********************************
 
->> Enter "quit" to exit 
-
->> Enter "meal" to display your order
-
 """
 print(greetings)
 
 items = ["Wings", "Cookies", "Spring Rolls", "Salmon", "Steak", "Meat Tornado", "A Literal Garden", "Ice Cream", "Cake", "Pie", "Coffee", "Tea", "Unicorn Tears"]
 quantities = {item:0 for item in items}
+
 
 while True:
     value = input("> ")
