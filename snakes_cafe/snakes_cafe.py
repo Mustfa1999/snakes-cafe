@@ -43,7 +43,6 @@ print(greetings)
 items = ["Wings", "Cookies", "Spring Rolls", "Salmon", "Steak", "Meat Tornado", "A Literal Garden", "Ice Cream", "Cake", "Pie", "Coffee", "Tea", "Unicorn Tears"]
 quantities = {item:0 for item in items}
 
-
 while True:
     value = input("> ")
 
@@ -57,6 +56,7 @@ while True:
             print(i)
     else:
         print(f"Sorry ... \"{value}\" is not on the menu.\n")
+        
         while True:
             answer = input("Would you like to order anything else ? (y/n) : ")
             if (answer == "y") or (answer == "n"):
@@ -66,4 +66,4 @@ while True:
         if answer == "n":
             break
 
-print("\nThanks for ordering !!\n")
+print("\nThanks for ordering !! \n")
