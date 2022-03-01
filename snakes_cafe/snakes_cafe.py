@@ -1,11 +1,12 @@
 greetings = """
 $ python snakes_cafe.py
-**************************************
-**    Welcome to the Snakes Cafe!   **
-**    Please see our menu below.    **
+****************************************
+**    Welcome to the Snakes Cafe!     **
+**    Please see our menu below.      **
 **
-** To quit at any time, type "quit" **
-**************************************
+** To quit at any time, type "quit"   **
+** To display your order, type "meal" **
+****************************************
 
 Appetizers
 ----------
@@ -36,10 +37,6 @@ Unicorn Tears
 ** What would you like to order? **
 ***********************************
 
->> Enter "quit" to exit 
-
->> Enter "meal" to display your order
-
 """
 print(greetings)
 
@@ -59,6 +56,7 @@ while True:
             print(i)
     else:
         print(f"Sorry ... \"{value}\" is not on the menu.\n")
+        
         while True:
             answer = input("Would you like to order anything else ? (y/n) : ")
             if (answer == "y") or (answer == "n"):
@@ -68,4 +66,4 @@ while True:
         if answer == "n":
             break
 
-print("\nThanks for ordering !!\n")
+print("\nThanks for ordering !! \n")
